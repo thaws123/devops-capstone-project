@@ -138,7 +138,7 @@ class TestAccountService(TestCase):
         self.assertEqual(data["email"], account.email)
         self.assertEqual(data["address"], account.address)
         self.assertEqual(data["phone_number"], account.phone_number)
-    
+
     def test_account_not_found(self):
         """It should return 404 for an Account that does not exist"""
         resp = self.client.get(
